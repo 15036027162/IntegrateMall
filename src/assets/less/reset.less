@@ -1,0 +1,214 @@
+*, *:before, *:after {box-sizing: border-box;}
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, img {margin: 0;padding: 0;}
+audio, canvas,img,svg,video {max-width: 100%;vertical-align: middle;}
+ul,li {list-style:none;}
+input,select,textarea{ font-size:100%;}
+input[type=text],input[type=password]{line-height: 28px\9;}
+table{border-collapse:collapse;border-spacing:0;}
+th{text-align:inherit;}
+q:before,q:after {content:'';}
+a{text-decoration:none;color: #666;}
+a:hover,a:focus {color: #666;text-decoration: none;}
+input{vertical-align: middle;border:0 none}
+img{vertical-align: middle}
+.hidden{display: none}
+.show{display: block}
+.clear:after{content: "";display: block;width: 0;height: 0;clear: both;}
+.fl-left{float: left}
+.fl-right{float:right}
+.po-relative{position: relative}
+.po-absolute{position:absolute}
+.po-fixed{position: fixed}
+.tx-center{text-align: center;}
+.tx-left{text-align: left;}
+.tx-right{text-align: right;}
+.dis-bl{display: block;}
+.flex{display: flex;flex-flow: row nowrap;justify-content: space-between;}
+.flexWrap{display: flex;flex-flow: row wrap;justify-content: space-between;}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Microsoft YaHei", "微软雅黑", "Arial,Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 14px;
+  color: #303133;
+  background-color: #FAFAFC;
+  overflow: auto;
+}
+
+/*change修改*/
+.loginContent .el-form-item__content{
+  margin-left: 0 !important;
+}
+.el-table td, .el-table th.is-leaf{
+  text-align: center !important;
+}
+.el-table th{
+  color: #606266 !important;
+  background: #F2F6FC !important;
+}
+.el-table--border:after,
+.el-table--group:after,
+.el-table:before {
+  background-color: #DCDFE6 !important;
+}
+.el-table--border,
+.el-table--group {
+  border-color: #DCDFE6 !important;
+}
+.el-table td,
+.el-table th.is-leaf {
+  border-bottom: 1px solid #DCDFE6 !important;
+}
+.el-table--border th,
+.el-table--border th.gutter:last-of-type {
+  border-bottom: 1px solid #DCDFE6 !important;
+}
+.el-table--border td,
+.el-table--border th {
+  border-right: none !important;
+  border-left: 1px solid #DCDFE6 !important;
+}
+.el-table--border td:first-child,
+.el-table--border th:first-child {
+  border-left: none !important;
+}
+.el-table .el-button{
+  padding: 0 !important;
+}
+.el-date-editor .el-range-separator{
+  padding: 0 !important;
+}
+.el-table th.gutter {
+  display: table-cell !important;
+}
+.el-table colgroup.gutter {
+  display: table-cell !important;
+}
+.el-table tr td:not(.showoverflow) .cell{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical; /*可以显示的行数，超出部分用...表示 */
+  /*autoprefixer: on */
+}
+
+/*个人信息*/
+.userHeader{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-left: 4px solid #666;
+  padding-left: 10px;
+}
+.userList{
+  margin-bottom: 50px;
+}
+.userList li{
+  margin-bottom: 20px;
+}
+.userList li label{
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 20px;
+}
+.userList li .changeBtn{
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.fixedBg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.modelMess{
+  width: 400px;
+  padding: 20px 50px;
+  background: #fff;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.modelMess .modelTitle{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.modelMess .iconCLose{
+  right: 20px;
+  top: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.modelMess .modelNum{
+  margin-bottom: 20px;
+}
+.modelMess .Modelcode{
+  margin-left: 10px;
+}
+
+/*header右侧个人中心下拉*/
+.headerRight .el-dropdown-link{
+  cursor: pointer;
+}
+
+/* Reset element-ui 分页*/
+.contents {
+  .el-pagination {
+    margin-top: 15px;
+    text-align: right;
+  }
+}
+
+/*背景图宽度*/
+.bgClass{
+  .el-upload--picture-card{
+    width: 225px !important;
+  }
+  .el-upload-list--picture-card .el-upload-list__item{
+    width: 225px !important;
+  }
+}
+// 荣誉表彰设置
+.addHonor_content{
+  .avatar-uploader{
+    .el-upload {
+      width: 140px;
+      height: 140px;
+      border: 1px dashed #e3e3e3;
+      border-radius: 6px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+      line-height: 140px;
+      color: #409EFF;
+    }
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+    color: #409EFF;
+  }
+}
+/*乡贤榜*/
+.honerRecognition {
+  .el-tag{
+    margin: 10px 10px 0 0;
+  }
+}
+/*去除此刻*/
+.el-picker-panel__footer .el-button--text.el-picker-panel__link-btn {
+  display: none;
+}
